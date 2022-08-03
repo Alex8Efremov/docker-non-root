@@ -1,0 +1,7 @@
+* * * * * echo "test___" >> /app/test.log 2>&1
+* * * * * echo "Hello World!" >> /app/test.log 2>&1
+* * * * * echo "Hello crontab!" >> /var/log/cron.log 2>&1
+
+*/1 * * * * echo "test___/1" >> /app/test.log 2>&1
+*/1 * * * * echo "Hello World! 1/" >> /app/test.log 2>&1
+*/1 * * * * echo "Hello crontab! /1" >> /var/log/cron.log 2>&1
