@@ -1,0 +1,11 @@
+docker-slim build --target base --tag slim --http-probe=false \
+--include-path /var/log/  \
+--include-path /app  \
+--include-path /etc/group \
+--include-path /etc/crontabs \
+--include-path /usr/sbin/crond \
+--include-exe apk \
+--include-exe libcap \
+--include-exe setcap \
+--include-exe dcron \
+--continue-after 1
